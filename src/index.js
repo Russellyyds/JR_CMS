@@ -14,9 +14,9 @@ const validationErrorMiddleware = require('./middleware/error/validationError');
 const notFoundError = require('./middleware/error/notFoundError');
 
 
-const port=process.env.PORT || 4000
+const port=process.env.PORT || 3000
 const app=express()
-app.use(morgan(process.env.NODE_ENV==="production"?"combined":"dev"));
+// app.use(morgan(process.env.NODE_ENV==="production"?"combined":"dev"));
 app.use(helmet())
 app.use(cors())
 app.use(express.json())
